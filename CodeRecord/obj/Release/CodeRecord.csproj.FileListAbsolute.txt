@@ -79,3 +79,6 @@ E:\Vs.net\CodeRecord\CodeRecord\bin\System.Web.Webpages.Deployment.xml
 E:\Vs.net\CodeRecord\CodeRecord\bin\System.Web.Webpages.Razor.xml
 E:\Vs.net\CodeRecord\CodeRecord\bin\System.Web.Helpers.xml
 E:\Vs.net\CodeRecord\CodeRecord\bin\System.Web.Mvc.xml
+E:\Vs.net\CodeRecord\CodeRecord\obj\Release\CodeRecord.Migrations.InitialCreate.resources
+E:\Vs.net\CodeRecord\CodeRecord\obj\Release\CodeRecord.Migrations._08231.resources
+E:\Vs.net\CodeRecord\CodeRecord\obj\Release\CodeRecord.csproj.GenerateResource.cache

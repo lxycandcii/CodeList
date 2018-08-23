@@ -46,8 +46,11 @@ namespace CodeRecord.Controllers
         // 详细信息，请参阅 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CodeName,Code,Readmd,CreateTime,UpdateTime")] CodeList codeList)
+        public ActionResult Create([Bind(Include = "Id,CodeName,Code,Readmd")] CodeList codeList)
         {
+            codeList.CreateTime = DateTime.Now;
+            codeList.UpdateTime = DateTime.Now;
+
             if (ModelState.IsValid)
             {
                 db.Codes.Add(codeList);
@@ -78,8 +81,10 @@ namespace CodeRecord.Controllers
         // 详细信息，请参阅 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,CodeName,Code,Readmd,CreateTime,UpdateTime")] CodeList codeList)
+        public ActionResult Edit([Bind(Include = "Id,CodeName,Code,Readmd,CreateTime")] CodeList codeList)
         {
+            codeList.UpdateTime = DateTime.Now.Date;
+
             if (ModelState.IsValid)
             {
                 db.Entry(codeList).State = EntityState.Modified;

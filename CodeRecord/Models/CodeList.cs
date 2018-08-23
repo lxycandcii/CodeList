@@ -6,6 +6,8 @@ using System.Web;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace CodeRecord.Models
 {
@@ -26,11 +28,11 @@ namespace CodeRecord.Models
 
         [DisplayName("创建时间")]
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
-        public DateTime CreateTime { get; set; }
+        public DateTime? CreateTime { get; set; }
 
         [DisplayName("修改时间")]
         [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
-        public DateTime UpdateTime { get; set; }
+        public DateTime? UpdateTime { get; set; }
 
     }
 

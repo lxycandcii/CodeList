@@ -1,13 +1,13 @@
 ﻿@model CodeRecord.Models.CodeList
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "浏 览";
 }
 
-<h2>Details</h2>
+<h2>浏 览</h2>
 
 <div>
-    <h4>CodeList</h4>
+    <h4>浏 览</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -23,7 +23,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Code)
+            @Html.TextAreaFor(model => model.Code, 8, 20, new { @class = "form-control", @readonly = true, @style="resize:none" } )
         </dd>
 
         <dt>
@@ -31,7 +31,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Readmd)
+            @Html.TextAreaFor(model => model.Readmd, 8, 20, new { @class = "form-control", @readonly = true, @style = "resize:none" } )
         </dd>
 
         <dt>
@@ -53,6 +53,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("修改", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("返回列表", "Index")
 </p>
