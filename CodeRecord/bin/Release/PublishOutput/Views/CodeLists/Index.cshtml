@@ -14,17 +14,14 @@
         <th>
             @Html.DisplayNameFor(model => model.CodeName)
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.Code)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Readmd)
-        </th>
+        </th>*@
         <th>
-            @Html.DisplayNameFor(model => model.CreateTime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UpdateTime)
+            @Html.DisplayNameFor(model => model.CreateTime) / @Html.DisplayNameFor(model => model.UpdateTime)
         </th>
         <th></th>
     </tr>
@@ -34,17 +31,14 @@
         <td>
             @Html.DisplayFor(modelItem => item.CodeName)
         </td>
-        <td>
+        @*<td>
             @Html.TextAreaFor(modelItem => item.Code)
         </td>
         <td>
             @Html.TextAreaFor(modelItem => item.Readmd)
-        </td>
+        </td>*@
         <td>
-            @Html.DisplayFor(modelItem => item.CreateTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UpdateTime)
+            @Html.DisplayFor(modelItem => item.CreateTime) / @Html.DisplayFor(modelItem => item.UpdateTime)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
