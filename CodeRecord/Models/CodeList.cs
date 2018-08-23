@@ -25,9 +25,11 @@ namespace CodeRecord.Models
         public string Readmd { get; set; }
 
         [DisplayName("创建时间")]
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
         public DateTime CreateTime { get; set; }
 
         [DisplayName("修改时间")]
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd}", ApplyFormatInEditMode = true)]
         public DateTime UpdateTime { get; set; }
 
     }
