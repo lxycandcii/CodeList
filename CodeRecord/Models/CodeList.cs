@@ -29,6 +29,7 @@ namespace CodeRecord.Models
 
         [DisplayName("修改时间")]
         public DateTime UpdateTime { get; set; }
+
     }
 
     public class CodeListContext : DbContext
